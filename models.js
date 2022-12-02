@@ -6,14 +6,8 @@ var BooksSchema = new Schema({
   title: {
     type: String,
     required: true,
-    index: true,
   },
-  commentcount: {
-    type: Number,
-  },
-  comments: {
-    type: Array,
-  },
+  comments: [String],
 });
 
 //Export the model
